@@ -5,22 +5,25 @@
     
         <div class="alert alert-danger mt-2">
 
-        <form action="" method="post">
+        <form action="{{route('contacto.store')}}" method="post">
             @csrf
 
             <div class="from-group ">
-                <label for="nombre">Nombre:</label>
-                <input type=" text" class="form-control mx-auto" style="width: 500px" name="nombre" value="nombre">
+                <label for="ruta">Ruta:</label>
+                <input type=" text" class="form-control mx-auto" style="width: 500px" name="ruta" value="ruta">
             </div>
             <div class="from-group ">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control mx-auto" style="width: 500px" name="email" value="email">
+                <label for="tiempo">Tiempo:</label>
+                <input type="text" class="form-control mx-auto" style="width: 500px" name="tiempo" value="Tiempo de ruta">
             </div>   
-
-            <div class="from-group">
-                <label for="texto">Sugerencia:</label><br>
-                <textarea name="mensaje"  id="" cols="60" rows="10" value="texto"></textarea>
-            </div>
+            <div class="from-group ">
+                <label for="normas">Normas:</label>
+                <input type="text" class="form-control mx-auto" style="width: 500px" name="normas" value="Normas">
+            </div>   
+            <div class="from-group ">
+                <label for="precio">Precio:</label>
+                <input type="text" class="form-control mx-auto" style="width: 500px" name="precio" value="Precio en euros">
+            </div>   
             <button type="submit" class=" btn btn-primary mb-2">Añadir</button>
           
         </form>

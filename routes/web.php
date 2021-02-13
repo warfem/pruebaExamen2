@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\ContactanosController;
+use App\Mail\FormularioMailable;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::view("/","index");
 Route::view("index","index");
 Route::view("contacto","contacto");
+
+
+Route::get("contacto",[ContactanosController::class,"index"])->name("contacto.index");
+Route::post("contacto",[ContactanosController::class,"store"])->name("contacto.store");
