@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Index</a>
+                    <a class="nav-link" href="index">Index</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Excursiones</a>
@@ -30,7 +30,7 @@
                     <a class="nav-link" href="#">SobreNosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="contacto">Contacto</a>
                 </li>
             </ul>
         </div>

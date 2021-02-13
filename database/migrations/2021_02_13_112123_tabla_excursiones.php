@@ -18,7 +18,6 @@ class TablaExcursiones extends Migration
             $table->string("Ruta");
             $table->string("Tiempo");
             $table->string("Precio /€");        
-            $table->string("Extras");
         });
     }
 
